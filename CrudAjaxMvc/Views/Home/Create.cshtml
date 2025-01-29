@@ -1,0 +1,146 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<style>
+    .form-group.row {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+</style>
+
+
+@if (@ViewBag.Page == "Edit")
+{
+    <h2>Edit</h2>
+
+}
+else if (@ViewBag.Page == "Delete")
+{
+<h2>Delete</h2>
+}
+else
+{
+    <h2>Create</h2>
+}
+
+
+
+
+<div class="row">
+    <div class="col-sm-6">
+
+        <div class="row form-group">
+            <div class="col-sm-4">
+                <label class="form-label">ProductNO</label>
+            </div>
+            <div class="col-sm-8">
+                @if (@ViewBag.Page == "Delete")
+                {
+                    <input type="text" id="txtProductNO" readonly class="form-control" />
+
+                }
+                else
+                {
+                    <input type="text" id="txtProductNO" class="form-control" />
+
+                }
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-4">
+                <label class="form-label">ProductName</label>
+            </div>
+            <div class="col-sm-8">
+                @if (@ViewBag.Page == "Delete")
+                {
+                    <input type="text" readonly id="txtProductName" class="form-control" />
+
+
+                }
+                else
+                {
+                    <input type="text" id="txtProductName" class="form-control" />
+
+
+                }
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-4">
+                <label class="form-label">Category</label>
+            </div>
+            <div class="col-sm-8">
+                @if (@ViewBag.Page == "Delete")
+                {
+                    <input type="text" readonly id="txtCategory" class="form-control" />
+
+                }
+                else
+                {
+                    <input type="text" id="txtCategory" class="form-control" />
+
+                }
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-4">
+                <label for="txtPrice" class="form-label">Price</label>
+            </div>
+            <div class="col-sm-8">
+                @if (@ViewBag.Page == "Delete")
+                {
+                    <input type="text" readonly id="txtPrice" class="form-control" />
+
+                }
+                else
+                {
+                    <input type="text" id="txtPrice" class="form-control" />
+
+                }
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-8">
+
+                @if (@ViewBag.Page == "Edit")
+                {
+                    <button type="button" id="btnUpdate" class="btn btn-success btn-sm">Update</button>
+                    <button type="button" id="btnClr" class="btn btn-primary btn-sm">Clear</button>
+                   
+
+
+                }
+                else if (@ViewBag.Page == "Delete")
+                {
+                    <button type="button" id="btnDelete" class="btn btn-danger btn-sm">Delete</button>
+                }
+                else
+                {
+                    <button type="button" id="btnAdd" class="btn btn-success btn-sm">Add</button>
+
+                }
+                <button type="button" id="btnBack" class="btn btn-danger btn-sm">Back</button>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6"></div>
+</div>
+
+
+<input type="hidden" id="hdnProdId" value="@ViewBag.ProdId" class="form-control" />
+
+
+<script src="~/Scripts/Home/Create.js"></script>
+
+
+
+

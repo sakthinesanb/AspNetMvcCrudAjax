@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "CreateCustomer";
+}
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<style>
+    .form-group.row {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+</style>
+
+<h2>CreateCustomer</h2>
+
+<div class="row">
+    <div class="col-sm-6">
+
+        @*<div class="row form-group">
+            <div class="col-sm-4">
+                <label class="form-label">ProductID</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="txtProductID" class="form-control" />
+            </div>
+        </div>*@
+        <div class="row form-group">
+            <div class="col-sm-4">
+                <label class="form-label">CustomerName</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="txtCustomerName" class="form-control" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-4">
+                <label class="form-label">CustomerNO</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="txtCustomerNO" class="form-control" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-4">
+                <label for="Quantity" class="form-label">Quantity</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="txtQuantity" class="form-control" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-4">
+                <label for="txtTotal" class="form-label">Total</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="txtTotal" class="form-control" />
+            </div>
+        </div>
+        @*<div class="row form-group">
+            <div class="col-sm-4">
+                <label for="txtDate" class="form-label">Date</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="txtDate" class="form-control" />
+            </div>
+        </div>*@
+        <div class="row form-group">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-8">
+                <button type="button" id="btnCreate" class="btn btn-success btn-sm">Add</button>
+                <button type="button" id="btnClr" class="btn btn-warning btn-sm">Clear</button>
+                <button type="button" id="btnBack" class="btn btn-danger btn-sm">Back</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6"></div>
+</div>
+<script src="~/Scripts/Customer/CreateCustomer.js"></script>

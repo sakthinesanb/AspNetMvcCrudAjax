@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<style>
+    .form-group.row {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+</style>
+<h2>Login Page</h2>
+<div class="container">
+    <div class="col-sm-6">
+        <div class="row form-group">
+            <div class="col-sm-6">
+                <label class="form-label">Username</label>
+            </div>
+            <div class="col-sm-6">
+                <input type="text" id="txtUser" class="form-control" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-6">
+                <label>Password</label>
+            </div>
+            <div class="col-sm-6">
+                <input type="text" id="txtPass" class="form-control" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-6">
+                <button id="btnLogin" class="btn btn-sm btn-primary">Login</button>
+                <button id="btnClr" class="btn btn-sm btn-danger" onclick="fnClear()">Clear</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6"></div>
+</div>
+
+<script src="~/Scripts/User/User.js"></script>
